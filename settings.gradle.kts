@@ -12,4 +12,4 @@ pluginManagement {
 
 rootProject.name = "Kraze"
 
-include(":api")
+include(":api", ":api:common")
