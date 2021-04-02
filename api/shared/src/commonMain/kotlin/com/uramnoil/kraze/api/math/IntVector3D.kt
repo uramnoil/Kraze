@@ -4,10 +4,11 @@ import com.uramnoil.kraze.api.component.Component
 
 
 /**
- * Three-dimensional vector.
+ * Integer three-dimensional vector.
  *
  * @property x
  * @property y
  * @property z
  */
-data class Vector3D<T : Number>(var x: T, var y: T, var z: T) : Component
+data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
+}
