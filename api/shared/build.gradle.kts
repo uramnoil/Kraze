@@ -1,7 +1,6 @@
-group = "com.uramnoil.kraze.api"
-
 plugins {
     kotlin("multiplatform")
+    id("org.jetbrains.dokka")
 }
 
 kotlin {
