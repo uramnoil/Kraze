@@ -38,6 +38,6 @@ data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
     operator fun rangeTo(other: IntVector3D) = IntVector3D(
         other.x - x,
         other.y - y,
-        other.z - y
+        other.z - z
     )
 }
