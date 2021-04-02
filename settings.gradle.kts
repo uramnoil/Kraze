@@ -1,15 +1,15 @@
 pluginManagement {
-    val kotlinVersion: String by settings
+    val kotlin_version: String by settings
 
     repositories {
         mavenCentral()
     }
 
     plugins {
-        kotlin("multiplatform") version kotlinVersion
+        kotlin("multiplatform") version kotlin_version
     }
 }
 
 rootProject.name = "Kraze"
 
-include(":api", ":api:common")
+include(":api:common", ":api")
