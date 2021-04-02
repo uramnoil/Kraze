@@ -41,6 +41,11 @@ data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
         z / other.z
     )
 
+    /**
+     * Vector from its own vector to the [other] vector.
+     *
+     * @param other
+     */
     operator fun rangeTo(other: IntVector3D) = IntVector3D(
         other.x - x,
         other.y - y,
