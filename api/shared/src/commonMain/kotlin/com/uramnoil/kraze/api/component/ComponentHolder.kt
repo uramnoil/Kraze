@@ -30,11 +30,11 @@ interface ComponentHolder {
  *
  * @param T
  */
-inline fun <reified T : Component> ComponentHolder.get() = components.filterIsInstance<T>().first()
+inline fun <reified T : Component> ComponentHolder.getComponent() = components.filterIsInstance<T>().first()
 
 /**
  * Returns a component that is instances of specified type parameter R, or null if there are no components.
  *
  * @param T
  */
-inline fun <reified T : Component> ComponentHolder.getOrNull() = components.filterIsInstance<T>().firstOrNull()
+inline fun <reified T : Component> ComponentHolder.getComponentOrNull() = components.filterIsInstance<T>().firstOrNull()
