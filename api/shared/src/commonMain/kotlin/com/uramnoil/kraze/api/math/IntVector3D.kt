@@ -11,6 +11,12 @@ import com.uramnoil.kraze.api.component.Component
  * @property z
  */
 data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
+    operator fun unaryMinus() = IntVector3D(
+        -x,
+        -y,
+        -z
+    )
+
     operator fun plus(other: IntVector3D) = IntVector3D(
         x + other.x,
         y + other.y,
