@@ -4,7 +4,7 @@ import com.uramnoil.kraze.api.component.Component
 
 
 /**
- * three-dimensional vector.
+ * Three-dimensional vector.
  *
  * @property x
  * @property y
