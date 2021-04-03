@@ -153,7 +153,7 @@ class AxisAlignedBB
      * @param y the Y coordinate to contract in both directions
      * @param z the Z coordinate to contract in both directions
      */
-    fun AxisAlignedBBcontract(x: Float, y: Float, z: Float) {
+    fun contract(x: Float, y: Float, z: Float) {
         minX += x
         minY += y
         minZ += z
@@ -275,7 +275,7 @@ class AxisAlignedBB
             (maxZ - other.minZ).takeIf { it > z }?.let { offset = it }
         }
 
-        return z
+        return offset
     }
 
     /**
