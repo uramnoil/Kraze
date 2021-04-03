@@ -1,3 +1,10 @@
+/**
+ * Includes gomint
+ * https://gomint.io
+ * Copyright (c) 2020, GoMint, BlackyPaw and geNAZt
+ * Released under the BSD License.
+ */
+
 package com.uramnoil.kraze.api.math
 
 class AxisAlignedBB
