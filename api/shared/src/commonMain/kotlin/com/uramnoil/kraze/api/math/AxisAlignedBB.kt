@@ -311,20 +311,17 @@ class AxisAlignedBB
      */
     fun averageEdgeLength() = (maxX - minX + maxY - minY + maxZ - minZ) / 3
 
-    fun isVectorInYZ(vector: IntVector3D) = vector.y >= minY && vector.y <= maxY && vector.z >= minZ && vector.z <= maxZ
+    fun isVectorInYZ(vector: IntVector3D) = vector.y.toFloat() in (minY..maxY) && vector.z.toFloat() in minZ..maxZ
 
-    fun isVectorInYZ(vector: FloatVector3D) =
-        vector.y in minY..maxY && vector.z >= minZ && vector.z <= maxZ
+    fun isVectorInYZ(vector: FloatVector3D) = vector.y in minY..maxY && vector.z in minZ..maxZ
 
-    fun isVectorInXZ(vector: IntVector3D) = vector.x >= minX && vector.x <= maxX && vector.z >= minZ && vector.z <= maxZ
+    fun isVectorInXZ(vector: IntVector3D) = vector.x.toFloat() in minX..maxX && vector.z.toFloat() in minZ..maxZ
 
-    fun isVectorInXZ(vector: FloatVector3D) =
-        vector.x in minX..maxX && vector.z >= minZ && vector.z <= maxZ
+    fun isVectorInXZ(vector: FloatVector3D) = vector.x in minX..maxX && vector.z in minZ..maxZ
 
-    fun isVectorInXY(vector: IntVector3D) = vector.x >= minX && vector.x <= maxX && vector.y >= minY && vector.y <= maxY
+    fun isVectorInXY(vector: IntVector3D) = vector.x.toFloat() in minX..maxX && vector.y.toFloat() in minY..maxY
 
-    fun isVectorInXY(vector: FloatVector3D) =
-        vector.x in minX..maxX && vector.y >= minY && vector.y <= maxY
+    fun isVectorInXY(vector: FloatVector3D) = vector.x in minX..maxX && vector.y in minY..maxY
 
     /**
      * Calculate the vector which is in line with this bounding box.
