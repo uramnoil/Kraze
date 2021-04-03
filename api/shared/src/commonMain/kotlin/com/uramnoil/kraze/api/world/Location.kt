@@ -2,5 +2,5 @@ package com.uramnoil.kraze.api.world
 
 import com.uramnoil.kraze.api.math.FloatVector3D
 
-class Location(val vector: FloatVector3D, val world: World) {
+class Location(var vector: FloatVector3D, var world: World) {
 }
