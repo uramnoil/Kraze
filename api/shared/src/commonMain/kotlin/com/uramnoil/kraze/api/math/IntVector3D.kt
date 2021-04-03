@@ -1,6 +1,7 @@
 package com.uramnoil.kraze.api.math
 
 import com.uramnoil.kraze.api.component.Component
+import kotlin.math.sqrt
 
 
 /**
@@ -11,6 +12,12 @@ import com.uramnoil.kraze.api.component.Component
  * @property z
  */
 data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
+    val distance: Float
+        get() = sqrt((x * x + y * y + z + z).toFloat())
+
+    val distanceSquared: Int
+        get() = x * x + y * y + z + z
+
     operator fun unaryMinus() = IntVector3D(
         -x,
         -y,

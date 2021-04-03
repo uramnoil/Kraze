@@ -1,6 +1,14 @@
 package com.uramnoil.kraze.api.math
 
+import kotlin.math.sqrt
+
 data class FloatVector3D(var x: Float, var y: Float, var z: Float) {
+    val distance: Float
+        get() = sqrt(x * x + y * y + z + z)
+
+    val distanceSquared: Float
+        get() = x * x + y * y + z + z
+
     fun vectorWhenXIsOnLine(other: FloatVector3D, x: Float): FloatVector3D? {
         val xDiff: Float = other.x - this.x
         val yDiff: Float = other.y - y
