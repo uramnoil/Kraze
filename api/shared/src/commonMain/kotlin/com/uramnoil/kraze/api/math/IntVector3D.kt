@@ -12,10 +12,10 @@ import kotlin.math.sqrt
  * @property z
  */
 data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
-    val distance: Float
+    val length: Float
         get() = sqrt((x * x + y * y + z + z).toFloat())
 
-    val distanceSquared: Int
+    val lengthSquared: Int
         get() = x * x + y * y + z + z
 
     operator fun unaryMinus() = IntVector3D(

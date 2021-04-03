@@ -3,10 +3,10 @@ package com.uramnoil.kraze.api.math
 import kotlin.math.sqrt
 
 data class FloatVector3D(var x: Float, var y: Float, var z: Float) {
-    val distance: Float
+    val length: Float
         get() = sqrt(x * x + y * y + z + z)
 
-    val distanceSquared: Float
+    val lengthSquared: Float
         get() = x * x + y * y + z + z
 
     operator fun unaryMinus() = FloatVector3D(
