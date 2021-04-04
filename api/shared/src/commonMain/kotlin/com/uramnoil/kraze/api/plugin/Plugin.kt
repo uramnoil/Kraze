@@ -5,8 +5,7 @@ import kotlinx.coroutines.*
 abstract class Plugin : CoroutineScope {
     private val job = SupervisorJob()
 
-    val coroutineScope: PluginCoroutineScope = PluginCoroutineScopeImpl(
-        this,
+    val coroutineScope = CoroutineScope(
         job + Dispatchers.Main.immediate + CoroutineExceptionHandler { _, throwable ->
             //ロギング
             isEnabled = false
