@@ -11,9 +11,7 @@ kotlin {
             val coroutines_version: String by project
 
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version") {
-
-                }
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version")
             }
         }
 
