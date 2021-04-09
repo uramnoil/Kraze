@@ -8,17 +8,17 @@ interface Entity : ComponentHolder {
     /**
      * Location with the entity.
      */
-    val location: Location
+    var location: Location
 
     /**
      * The direction in which the body is facing.
      */
-    val direction: FloatVector3D
+    var direction: FloatVector3D
 
     /**
      * 1tick movement.
      */
-    val movement: FloatVector3D
+    var movement: FloatVector3D
 
     /**
      * Age of this entity.
@@ -44,38 +44,4 @@ interface Entity : ComponentHolder {
      * Entity size.
      */
     var scale: Float
-
-    /**
-     * Teleport to [to] in the same world.
-     *
-     * @param to
-     */
-    fun teleport(to: FloatVector3D)
-
-    /**
-     * Teleport to [to].
-     *
-     * @param to
-     */
-    fun teleport(to: Location)
-}
-
-/**
- * Move to [to] relative to the speed of [speed].
- *
- * @param to
- * @param speed meter per tick
- */
-fun Entity.moveRelativelyTo(to: FloatVector3D, speed: Float) {
-    TODO()
-}
-
-/**
- * Move to [to] absolute to the speed of [speed].
- *
- * @param to
- * @param speed meter per tick
- */
-fun Entity.moveAbsolutelyTo(to: FloatVector3D, speed: Float) {
-    TODO()
 }
