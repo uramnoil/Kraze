@@ -7,4 +7,4 @@ package com.uramnoil.kraze.api.math
  * @property x
  * @property y
  */
-data class IntVector2D(var x: Int, var y: Int)
+data class IntVector2D(val x: Int, val y: Int)

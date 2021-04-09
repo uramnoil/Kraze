@@ -2,7 +2,7 @@ package com.uramnoil.kraze.api.math
 
 import kotlin.math.sqrt
 
-data class FloatVector3D(var x: Float, var y: Float, var z: Float) {
+data class FloatVector3D(val x: Float, val y: Float, val z: Float) {
     val length: Float
         get() = sqrt(x * x + y * y + z + z)
 

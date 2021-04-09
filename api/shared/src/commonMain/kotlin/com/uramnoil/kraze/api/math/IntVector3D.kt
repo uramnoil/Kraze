@@ -11,7 +11,7 @@ import kotlin.math.sqrt
  * @property y
  * @property z
  */
-data class IntVector3D(var x: Int, var y: Int, var z: Int) : Component {
+data class IntVector3D(val x: Int, val y: Int, val z: Int) : Component {
     val length: Float
         get() = sqrt((x * x + y * y + z + z).toFloat())
 
