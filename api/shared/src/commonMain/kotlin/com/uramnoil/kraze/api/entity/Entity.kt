@@ -21,6 +21,11 @@ interface Entity : ComponentHolder {
     val movement: FloatVector3D
 
     /**
+     * Age of this entity.
+     */
+    val age: Long
+
+    /**
      * Whether the entity is visible to others.
      */
     var isVisible: Boolean
