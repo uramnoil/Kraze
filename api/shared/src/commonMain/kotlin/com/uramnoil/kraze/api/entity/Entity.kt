@@ -1,6 +1,7 @@
 package com.uramnoil.kraze.api.entity
 
 import com.uramnoil.kraze.api.component.ComponentHolder
+import com.uramnoil.kraze.api.math.FloatVector2D
 import com.uramnoil.kraze.api.math.FloatVector3D
 import com.uramnoil.kraze.api.world.Location
 
@@ -13,7 +14,7 @@ interface Entity : ComponentHolder {
     /**
      * The direction in which the body is facing.
      */
-    var direction: FloatVector3D
+    var direction: FloatVector2D
 
     /**
      * 1tick movement.
