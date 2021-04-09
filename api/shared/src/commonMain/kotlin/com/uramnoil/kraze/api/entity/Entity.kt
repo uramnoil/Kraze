@@ -8,11 +8,14 @@ import com.uramnoil.kraze.api.world.Location
 interface Entity : ComponentHolder {
     /**
      * Location with the entity.
+     * If you assign a new Location to this variable, the entity will teleport to that location.
      */
     var location: Location
 
     /**
      * The direction in which the body is facing.
+     * If you assign a new FloatVector2D to this variable,
+     * this entity will be oriented in the direction as a relative direction.
      */
     var direction: FloatVector2D
 
