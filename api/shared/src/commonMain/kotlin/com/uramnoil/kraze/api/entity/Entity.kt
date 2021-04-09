@@ -13,7 +13,7 @@ interface Entity : ComponentHolder {
     /**
      * The direction in which the body is facing.
      */
-    var direction: FloatVector3D
+    val direction: FloatVector3D
 
     /**
      * 1tick move.
