@@ -24,7 +24,8 @@ interface Entity : ComponentHolder {
     /**
      * Age of this entity.
      */
-    val age: Long
+    @OptIn(ExperimentalUnsignedTypes::class)
+    val age: ULong
 
     /**
      * Whether the entity is visible to others.
