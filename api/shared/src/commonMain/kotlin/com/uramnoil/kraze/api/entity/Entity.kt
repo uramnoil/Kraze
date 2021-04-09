@@ -16,7 +16,7 @@ interface Entity : ComponentHolder {
     val direction: FloatVector3D
 
     /**
-     * 1tick move.
+     * 1tick movement.
      */
     val movement: FloatVector3D
 
