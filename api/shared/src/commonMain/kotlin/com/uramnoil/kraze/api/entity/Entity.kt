@@ -49,4 +49,10 @@ interface Entity : ComponentHolder {
      * Entity size.
      */
     var scale: Float
+
+    /**
+     * Despawn this entity.
+     *
+     */
+    fun despawn()
 }
